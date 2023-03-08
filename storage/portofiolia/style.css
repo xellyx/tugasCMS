@@ -1,0 +1,245 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    background-image: url(gra.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.fontnavbartitle {
+    font-size: 30px;
+    pointer-events: none; 
+    cursor: default;
+    text-decoration: none; 
+    color: white;
+}
+
+
+
+
+
+.myimg {
+    border-radius: 200px 0px 200px 200px;
+    -webkit-border-radius: 200px 0px 200px 200px;
+    -moz-border-radius: 200px 0px 200px 200px;
+    box-shadow: 13px 12px 8px 0px rgba(0,0,0,0.77);
+    -webkit-box-shadow: 13px 12px 8px 0px rgba(0,0,0,0.77);
+    -moz-box-shadow: 13px 12px 8px 0px rgba(0,0,0,0.77);
+    transition: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition: .5s ease-in-out;
+    position: absolute;
+    top: 50%;
+    left:80%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(100%);
+
+}
+
+.myimg:hover {
+    filter: grayscale(0%);
+
+}
+
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: black;
+    color: white;
+    margin-bottom: auto;
+    position: static;
+    bottom: 0;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+.footer .footer-left {
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.footer-left h2 {
+    color: white;
+    margin-top: 17px;
+    margin-left: 50px;
+    font-size: 22px;
+    padding-top: 20p;
+    
+}
+
+.footer .footer-center {
+    margin-top: 15px;
+    margin-left: 200px;
+}
+
+.footer-center ul li a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: -25px;
+    color: #bbbbbb;
+    display: block;
+    transition: all .3s ease;
+}
+
+
+.footer-center ul li a:hover {
+    color: #ffffff;
+    padding-left: 10px;
+}
+.footer-right {
+    margin-top: 15px;
+    font-size: 40px;
+}
+.footer-right div {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.footer .footer-right {
+    margin-top: 15px;
+    margin-left: 200px;
+}
+.footer-right div {
+    font: 17px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+
+.footer-pojok h4 {
+    margin-top: 25px;
+    font-size: 25px;
+
+
+}
+
+.footer .footer-pojok {
+    margin-top: 25px;
+    margin-left: 200px;
+}
+
+
+.btn{
+
+    font-family: Roboto, sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0066CC;
+    padding: 10px 30px;
+    border: 2px solid #0066cc;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 1000ms;
+    transform: translateY(0);
+    display: flex;
+    align-items: center;
+    cursor: grab;
+    text-transform: uppercase;
+    }
+
+    .btn:hover{
+
+        transition : 1000ms;
+        padding: 10px 50px;
+        transform : translateY(-0px);
+        background-color: #fff;
+        color: #0066cc;
+        border: solid 2px #0066cc;
+        }
+
+.biodata {
+    margin-top: 400px;
+    background-color: #395B64;
+
+}
+
+.biodata h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+    margin-top: 150px;
+    
+}
+
+.biodata1 p {
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    
+}
+.biodata2 p {
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: ;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2s steps(40, end),
+      blink-caret .5s step-end infinite;
+  }
+
+  .typewriter h2 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid black; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 10 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 6s steps(40, end),
+      blink-caret .1s step-end infinite;
+  }
+
+  #site-header {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    transition: all 0.3s ease;
+    z-index: 100;
+  }
+  #site-header.hide {
+    top: -100px;
+  }
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent; }
+  }

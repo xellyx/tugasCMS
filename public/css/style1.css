@@ -1,0 +1,96 @@
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.myimg {
+    border-radius: 200px 0px 200px 200px;
+    -webkit-border-radius: 200px 0px 200px 200px;
+    -moz-border-radius: 200px 0px 200px 200px;
+    box-shadow: 13px 12px 8px 0px rgba(0, 0, 0, 0.77);
+    -webkit-box-shadow: 13px 12px 8px 0px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: 13px 12px 8px 0px rgba(0, 0, 0, 0.77);
+    transition: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition: .5s ease-in-out;
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(100%);
+
+}
+
+.myimg:hover {
+    filter: grayscale(0%);
+
+}
+
+.jdl_navbar {
+    font-size: 30px;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: white;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.biodata {
+    background-color: #395B64;
+
+}
+
+.biodata h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: white;
+    margin-top: 100px;
+
+}
+
+.biodata1 p {
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+
+}
+
+.biodata2 p {
+    font-size: 25px;
+    font-weight: 400;
+    color: white;
+}
+
+.table1 {
+    border-collapse: collapse;
+    font-size: 22px;
+    min-width: 350;
+    margin: 25px 0;
+}
+
+.table1 thead tr {
+    background-color: blue;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+.table1 th,
+.table td {
+    padding: 10px 20px;
+}
+
+.table tbody,
+tr {
+    color: black;
+    border: solid;
+    background-color: white;
+    text-align: left;
+}

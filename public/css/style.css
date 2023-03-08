@@ -1,0 +1,77 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url(/images/gra.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.jdl_navbar {
+    font-size: 30px;
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: white;
+}
+
+.myimg {
+    border-radius: 200px 0px 200px 200px;
+    -webkit-border-radius: 200px 0px 200px 200px;
+    -moz-border-radius: 200px 0px 200px 200px;
+    box-shadow: 13px 12px 8px 0px rgba(0, 0, 0, 0.77);
+    -webkit-box-shadow: 13px 12px 8px 0px rgba(0, 0, 0, 0.77);
+    -moz-box-shadow: 13px 12px 8px 0px rgba(0, 0, 0, 0.77);
+    transition: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transition: .5s ease-in-out;
+    position: absolute;
+    top: 60%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    filter: grayscale(100%);
+
+}
+
+.myimg:hover {
+    filter: grayscale(0%);
+
+}
+
+li {
+    list-style-type: none;
+}
+
+.btn {
+
+    font-family: Roboto, sans-serif;
+    font-weight: 0;
+    font-size: 14px;
+    color: #fff;
+    background-color: #0066CC;
+    padding: 10px 30px;
+    border: 2px solid #0066cc;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition: 1000ms;
+    transform: translateY(0);
+    display: flex;
+    align-items: center;
+    cursor: grab;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+
+    transition: 1000ms;
+    padding: 10px 50px;
+    transform: translateY(-0px);
+    background-color: #fff;
+    color: #0066cc;
+    border: solid 2px #0066cc;
+}
