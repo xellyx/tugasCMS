@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
-use App\Models\Sekolah;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,11 +16,27 @@ use App\Models\Sekolah;
 |
 */
 
+Route::get('/', function () {
+    return view('index');
+});
 
-Route::get('/', [UserController::class, 'index']);
+// Product
+Route::get('/product', [ProductController::class, 'index']);
+Route::get('/product/add', [ProductController::class, 'create']);
+Route::get('/product/{id}/edit', [ProductController::class, 'edit']);
+Route::get('/product/{id}/delete', [ProductController::class, 'destroy']);
+Route::post('/product',[ProductController::class, 'store']);
+Route::put('/product/{id}', [ProductController::class, 'update']);
 
-Route::get('/about', [UserController::class, 'about']);
+// Category
+Route::get('/category',[CategoryController::class, 'index']) ;
+Route::get('/category/add',[CategoryController::class, 'create']) ;
+Route::post('/category', [CategoryController::class, 'store']);
+Route::put('/category/{id}', [CategoryController::class, 'update']);
+Route::get('/category/{id}/edit', [CategoryController::class, 'edit']);
+Route::get('/category/{id}/delete', [CategoryController::class, 'destroy']);
 
-Route::get('/about', [UserController::class, 'data']);
-
-
+// Cart
+Route::get('/carts',[CartController::class, 'carts']);
+Route::get('shift-data', [CartController::class, 'shiftdata'])->name('shift-data');
+Route::get('/carts/{id}/delete', [CartController::class, 'destroy']);

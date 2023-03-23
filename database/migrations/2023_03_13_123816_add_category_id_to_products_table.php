@@ -13,9 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('data_skl', function (Blueprint  $table) {
-            $table->id();
-            $table->string('nama_sekolah');
+        Schema::table('products', function (Blueprint $table) {
+            $table->foreignId('category_id');
+            $table->foreign('category_id')->references('id')->on('categories');
         });
     }
 
@@ -26,6 +26,8 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('products', function (Blueprint $table) {
+            $table->dropColumn('category_id');
+        });
     }
 };
