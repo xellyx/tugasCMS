@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    @extends('app')
+    @extends('layouts.app')
 
     @section('content')
         <a class="btn btn-primary mt-3" href="{{ url('/product') }}">

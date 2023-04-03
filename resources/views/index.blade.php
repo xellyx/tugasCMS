@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,28 +16,25 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
+    {{-- <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-4">
         <div class="container-fluid">
             <a class="jdl_navbar">CRUD</a>
         </div>
-    </nav>
-
+    </nav> --}}
+  
     <div class="container">
         <div class="mt-5">
             <h1>CRUD SEDERHANA</h1>
         </div>
 
         <h4 class="mt-4">Website sederhana yang berisi tambah produk, memilih kategori, dan keranjang produk </h4>
+        <h4>Silahkan login atau daftar untuk melanjutkan</h4>
         <br>
         <p>
-            <a class="btn btn-primary btn-lg" href="{{ url('/product/add') }}">Tambah Produk</a>
-        </p>
-
-        <p>
-            <a class="btn btn-primary btn-lg" href="{{ url('/product') }}">Lihat Produk</a>
+            <a class="btn btn-primary btn-lg" href="{{ route('do.register') }}">DAFTAR</a>
+            <a class="btn btn-primary btn-lg" href="{{ route('do.login') }}">LOGIN</a>
         </p>
     </div>
-
 </body>
 
 </html>

@@ -10,8 +10,7 @@
 </head>
 
 <body>
-
-    @extends('app')
+    @extends('layouts.app')
 
     @section('content')
         <a class="btn btn-primary mt-3" href="{{ url('/category') }}">
@@ -21,8 +20,8 @@
                 <form action="{{ url('/category') }}" method="POST">
                     @csrf
                     <label for="exampleInputEmail1" class="form-label">Nama Kategori</label>
-                    <input type="text" class="form-control @error('name') is-invalid @enderror"
-                        id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
+                    <input type="text" class="form-control @error('name') is-invalid @enderror" id="exampleInputEmail1"
+                        aria-describedby="emailHelp" name="name">
 
 
                     @error('name')

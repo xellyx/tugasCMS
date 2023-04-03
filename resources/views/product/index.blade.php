@@ -10,22 +10,18 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style1.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 </head>
 
 <body>
-    @extends('app')
-
+    @extends('layouts.app')
     @section('content')
         <a href="{{ url('/product/add') }}">
             <button class="btn btn-primary mt-4" type="button">+ Tambah Produk</button>
         </a>
 
-        <a href="{{ url('/category') }}">
-            <button class="btn btn-warning mt-4" type="button">Manage Kategori</button>
-        </a>
-
         <a href="{{ url('/carts') }}">
-            <button class="cart btn btn-success mt-4" type="button">Keranjang</button>
+            <button class="cart btn btn-success bi bi-cart-plus mt-4" type="button"> Keranjang</button>
         </a>
 
         <div class="card mt-3">
@@ -52,18 +48,16 @@
                                     <td>Rp {{ $item['price'] }}</td>
                                     <td>{{ $item->category->name }}</td>
                                     <td class="button"> <a href="/product/{{ $item->id }}/edit">
-                                            <button class="btn btn-warning mt-2" type="button">Ubah</button>
+                                            <button class="btn btn-warning bi bi-pencil mt-2" type="button"></button>
                                         </a>
 
                                         <a href="/product/{{ $item->id }}/delete">
-                                            <button class="btn btn-danger mt-2" type="button">Hapus</button>
+                                            <button class="btn btn-danger bi bi-trash mt-2" type="button"></button>
                                         </a>
 
                                         <a href="/shift-data/">
-                                            <button class="btn btn-primary mt-2" type="button">Tambahkan ke
-                                                keranjang</button>
+                                            <button class="btn btn-primary bi bi-cart-plus mt-2" type="button"></button>
                                         </a>
-
                                     </td>
                                 </tr>
                             @endforeach
